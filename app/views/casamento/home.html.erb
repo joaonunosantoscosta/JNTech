@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Casamento João Nuno e Francisca</title>
+</head>
+
+
+<body class="casamento">
+
+<table>
+  <tr>
+      <div class="casamento_header">
+        <%= render 'casamento/header' %>
+        <%= yield :header %>
+      </div>
+ </tr>
+
+  <tr>
+  <!-- _MENU -->
+
+      <div align="center" >
+        <%= render 'casamento/menu' %>
+        <%= yield :menu %>
+      </div>
+  </tr>
+  <br><br>
+  <tr>
+
+      <!--FORM PARA AJAX-->
+        <!-- FALTA MUDAR SIZE DA DIV PARA FICAR COM O FOOTER SEMPRE EM V»BAIXO --->
+
+      <div id="form" align="center" >
+          <!--TABELA FOTOS-->
+          <%= render 'casamento/fotos' %>
+          <%= yield :fotos %>
+      </div>
+</tr>
+</table>
+
+<footer>     
+  <!-- _footer -->
+  <div class="casamento_footer">
+    <%= render 'casamento/footer' %>
+    <%= yield :footer %>
+  </div>
+</footer>
+</body>
+
+</html>
+
+

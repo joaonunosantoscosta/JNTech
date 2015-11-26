@@ -1,0 +1,39 @@
+<header>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">    
+            <div class="navbar navbar-inverse casamento_menu">
+                <div class="navbar-inner">
+                          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                           -- MENU --
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                          </a>
+                          <div class="nav-collapse collapse">
+                              <ul class="nav">
+                                  <li class="active">
+                                      <%= link_to "Home", fotos_path, :remote => true %>                                  <ul class="dropdown-menu">
+                                            <li><a href="#">João</a></li>
+                				                    <li><a href="#">Francisca</a>
+                				                      <ul>
+                				                  	    <li><a href="#">Fotos</a></li>
+                					                    </ul>
+                				                    </li>
+                                        </ul>
+                                  </li>
+                                  <li><%= link_to "Dress Code", dress_path, :remote => true %></li>
+                                  <li><%= link_to "Lista de Casamento", lista_casamento_path, :remote => true %></li>
+                                  <li><%= link_to "Como Chegar", como_chegar_path, :remote => true %></li>
+                                  <li><a href="#">Camionete</a></li>
+                                  <li><a href="#">Onde Ficar</a></li>
+                                  <li><a href="#">RSVP</a></li>
+                              </ul>
+                          </div><!-- /.nav-collapse -->
+                  </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+          </div>
+     </div>
+</div>
+
+</header>

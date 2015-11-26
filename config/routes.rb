@@ -1,8 +1,25 @@
 JntechApp::Application.routes.draw do
+ 
+
+  get "casamento/home"
+  get "welcome/home"
+  get 'como_chegar' => 'casamento#como_chegar'
+  get 'dress' => 'casamento#dress'
+  get 'fotos' => 'casamento#fotos'
+  get 'lista_casamento' => 'casamento#lista_casamento'
+  
+  #, :controller =>'casamento', :action => 'como_chegar'
+  #get "example/test"
   resources :clients
-
   resources :users
+  resources :noticias 
+  #resources :casamento
+  # post 'casamento/home', :controller=>'casamento', :action => 'form'
+  
+  
+   # root to: "noticias#index"
 
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -17,7 +34,7 @@ JntechApp::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
+  root 'welcome#home'
   # Example resource route with options:
   #   resources :products do
   #     member do
