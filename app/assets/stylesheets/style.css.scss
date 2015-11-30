@@ -212,7 +212,7 @@ mark {
     STRUCTURE
 --------------------------------------------------------- */
 #header-wrap {
-    background: image-url('header-bg.png');
+    background: url(header-bg.png);
     //width: 100%;
     //height: 70px;
     //z-index: 99999;
@@ -325,7 +325,7 @@ header {
     right: 10px;
     height: 43px;
     width: 43px;
-    background: image-url('back-to-top.png');
+    background: url(back-to-top.png);
     text-indent: -9999px;
     z-index: 9999;
 }
@@ -334,7 +334,7 @@ header {
 }
 .content-wrap form {
     //width: 600px;
-    background: image-url('form-bg.png');
+    background: url(form-bg.png);
     margin: 35px 0 25px 0;
     padding: 50px 40px 50px 40px;
 }
@@ -342,7 +342,7 @@ header {
 .content-wrap input.button {
    	height: 38px;
 	margin: 5px 0;
-	background: #342bd9  image-url('btn-bg.png');
+	background: #342bd9 url(btn-bg.png);
         border: 1px solid #342bd9;
         font-family: "MerriweatherBold", Georgia, Serif;
         font-size: 10px;
@@ -633,7 +633,7 @@ section#about-us .primary ul.the-team li.odd {
 }
 
 section#about-us aside .download-btn {
-    background: image-url('btn-bg.png');
+    background: url(btn-bg.png);
     display: block;
     //width: 250px;
     height: 53px;
@@ -704,7 +704,7 @@ section#contact .primary form textarea:focus {
 section#contact .primary form input.button {
    	height: 38px;
 	margin: 5px 0;
-	background: #342bd9 image-url('btn-bg.png');
+	background: #342bd9 url(btn-bg.png);
     border: 1px solid #342bd9;
     font-family: "MerriweatherBold", Georgia, Serif;
     font-size: 10px;
@@ -727,13 +727,13 @@ section#contact aside .social li a {
     padding-left: 35px;
 }
 section#contact aside .social li.facebook a {
-    background-image: asset-url('social/facebook.png') no-repeat left 11px;
+    background: url(social/facebook.png) no-repeat left 11px;
 }
 section#contact aside .social li.googleplus a {
     background: url(social/googleplus.png) no-repeat left 11px;
 }
 section#contact aside .social li.twitter a {
-    background-image: url(social/twitter.png) no-repeat left 11px;
+    background: url(social/twitter.png) no-repeat left 11px;
 }
 section#contact aside .social li.linkedin a {
     background: url(social/linkedin.png) no-repeat left 11px;
