@@ -727,13 +727,13 @@ section#contact aside .social li a {
     padding-left: 35px;
 }
 section#contact aside .social li.facebook a {
-    background: url(social/facebook.png) no-repeat left 11px;
+    background-image: asset-url('social/facebook.png') no-repeat left 11px;
 }
 section#contact aside .social li.googleplus a {
     background: url(social/googleplus.png) no-repeat left 11px;
 }
 section#contact aside .social li.twitter a {
-    background: url(social/twitter.png) no-repeat left 11px;
+    background-image: url(social/twitter.png) no-repeat left 11px;
 }
 section#contact aside .social li.linkedin a {
     background: url(social/linkedin.png) no-repeat left 11px;
