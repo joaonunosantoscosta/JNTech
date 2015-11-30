@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jo&atilde;o Costa :: Engenheiro Inform&aacute;tico</title>
+  <!--
+  <link rel="stylesheet" href="css/joaopag.css" type="text/css" media="screen" /> 
+  <script type="text/javascript" src="js/joaonunosantoscosta.js" ></script>
+  -->
+  <%= stylesheet_link_tag "joaopag.css" , media: "screen"%>
+  <!--%= javascript_include_tag "joaonunosantoscosta" %>-->
+</head>
+<body>
+<div id="main_joao">
+<div id="main_header">
+<!--<img id="m_header_logo" src="images/m_header_logo.png" alt="Log&oacute;tipo Filipe Costa" width="188" height="65" />
+-->
+<div id="m_header_area" style="display:inline;">
+<table width="500px">
+<tr>
+<td style="vertical-align:middle;">
+
+    <table>
+    <tr>
+    <th>Nome:</th>
+    <td>João Nuno Santos Costa</td>
+    </tr>
+    <tr>
+    <th>Formação:</th>
+    <td>Licenciatura em Engenharia Informática</td>
+    </tr>
+    <tr>
+    <th>Localidade:</th>
+    <td>Porto/Lisboa</td>
+    </tr>
+    <tr>
+    <th>Idade:</th>
+    <td id="getDate"><script type="text/javascript">getDate();</script> anos</td>
+	</tr>
+    </table>
+</td>
+<td style="vertical-align:middle;">
+
+    <table>
+    <tr>
+    <th>Curriculum Vitae: </th>
+     <td>
+      <%= link_to "[PDF]", portfolio_download_pdf_url %>
+     </td>
+    </tr>
+    <tr>
+    <th>Gmail:</th>
+    <td>joaonunosantoscosta</td>
+    </tr>
+	<tr>
+        <th scope="row">Telefone: </th>
+        <td>+351-917165608</a></td>
+      </tr>
+    </table>
+</td>
+</tr>
+</table>
+<!--id="m_header_area"-->
+</div>
+
+<!--id="main_header"-->
+</div>
+
+	<div align="right">
+   <%= link_to image_tag("bandeiraport.bmp", id: "bandeiraPortuguesa", alt: "", :width => 50, :height => 25) %>
+   <%= link_to "#{image_tag("icone_bandeira_inglaterra.bmp", id: "bandeiraInglesa", alt: "", :width => 50, :height => 25)}".html_safe, joaonunosantoscosta_VIng_path %>
+	</div>
+	
+<div id="main_image">
+	<div id="main_image_wrapsizer"></div>
+	<div id="navmenu"> 
+		<ul style="margin-top:0; margin-bottom:0; margin-left: 50px; padding-left:50px;">
+			<li class="tab"><a href="index.php?v=entrada" onclick="return abrir_tab('entrada')" id="tab_entrada">Entrada</a></li>
+			<li class="tab"><a href="index.php?v=sobre_mim" onclick="return abrir_tab('sobre_mim')" id="tab_sobre_mim">Sobre mim </a></li>
+			<li class="tab"><a href="index.php?v=competencias" onclick="return abrir_tab('competencias')" id="tab_competencias">Competências</a></li>
+			<li class="tab"><a href="index.php?v=portefolio" onclick="return abrir_tab('portefolio')" id="tab_portefolio">Portefólio</a></li>
+		</ul>
+	</div>
+<!--id="main_image"-->
+</div>
+
+<div id="main_content" >
+
+
+  <div id="mc_entrada" class="content">
+    <h1>Entrada</h1>
+	<br></br>
+	<h2>Introdução</h2>
+    <p>Bem-vindo ao meu site pessoal.</p>
+    <p>Sou recém-licenciado em Engenharia Informática e estive até ao dia 15 de Fevereiro de 2013 a estagiar na cidade do Porto como analista, programador WEB (PHP) e controlo de qualidade (SELENIUM e PHPUNIT).</p>
+    <p>Este espaço tem o objectivo de divulgar o meu trabalho, bem como o meu perfil, fornecendo meios de contacto a quem possa estar interessado.</p>
+  </div>
+  <!------------------------------------------------->
+  
+  
+  <div id="mc_sobre_mim" class="content">
+    <h1>Sobre mim</h1>
+	<br></br>
+	<h2>perfil</h2>
+	
+	<br></br>
+	<table border="0" id="tabela_perfil">
+      <tr>
+        <th scope="row">Nome: </th>
+        <td>João Nuno Santos Costa</td>
+    <%= link_to image_tag("curriculum.jpg", id: "m_header_logo", alt: "Logotipo Joao") %>
+	</tr>
+      <tr>
+        <th scope="row">Idade:</th>
+        <td id="getDate2"><script type="text/javascript">getDate2();</script> anos</td>
+      </tr>
+      <tr>
+        <th scope="row">Localidades:</th>
+        <td>Porto</td>
+      </tr>
+      <tr>
+        <th scope="row">Email: </th>
+        <td>joaonunosantoscosta@gmail.com</a></td>
+      </tr>
+	<tr>
+        <th scope="row">Telefone: </th>
+        <td>+351-917165608</td>
+      </tr>
+      <tr>
+        <th scope="row">LinkedIn: </th>
+        <td><a href="http://pt.linkedin.com/in/joaonunosantoscosta"> <img src="http://www.linkedin.com/img/webpromo/btn_profile_greytxt_80x15.gif" width="80" height="15" border="0" alt="View Jo&atilde;o Costa's profile on LinkedIn"></a></td>
+	  </tr>
+      <tr>
+        <th scope="row">Formação:</th>
+        <td><p>Licenciatura em Engenharia Informática(2009-2013). </p>
+          <p>Instituto Superior de Engenharia do Porto (<a href="http://www.isep.ipp.pt" target="_blank">ISEP-IPP</a>).</p>
+      </tr>
+      <tr>
+        <th scope="row">Curriculum Vitae: </th>
+        <td><a href="files/CV_João.pdf" target="_blank">Dezembro'14 [PDF]</a></td>
+	</tr>	
+</table>
+	<br></br>
+	<br></br>
+  	<h2>Breve biografia</h2>
+	<p>Nasci no Porto e desde cedo tive interesse em informática, iniciando-me pelos comandos de DOS, configurações e instalações de Windows, redes, passando pelas criações gráficas e desenvolvimento amador das primeiras páginas web.</p>
+	<p>Em 1999, ingressei num curso tecnico-profissional de Informática na Escola Profissional Nossa Senhora do Perpétuo Socorro (<a href="http://centrodecaridade.pai.pt/" target="_blank">EPNSPS</a>).</p>
+	<p>Em 2004 fui trabalhar numa impressa de impressão/design gráfico.</p>
+	<p>Em 2009, ingressei na Licenciatura em Engenharia Informática do Instituto Superior de Engenharia do Porto (<a href="http://www.isep.ipp.pt" target="_blank">ISEP-IPP</a>) onde obtive conhecimentos de engenharia de software, programação, bases de dados, gestão de redes e sistemas, inteligência artificial, entre outros.</p>
+	<p>Em 2012 (2012/Setembro - 2013/Fevereiro) elaborei o projecto final de licenciatura, com os temas: </p>
+	<p> * Processamento Automático de Catálogos</p>
+	<p> * Testes Automáticos (Qualidade)</p>
+	<p>Este projecto desenvolvido utiliza as tecnologias PHP, PHPUnit, Selenium WebDriver, sendo estas tecnologias onde tenho mais conhecimentos e experiência. No entanto, a licenciatura deu-me conhecimentos e alguma experiência em diversas outras tecnologias.</p>
+    
+	<h2>Interesses</h2>
+    <p>Para além da informática tenho também interesse em jogos, música, cinema, turismo e desporto.</p>
+										     
+    <!--id="mc_sobre_mim"-->
+	
+  
+  </div>
+  <!----------------------------------------------------------------------->
+  
+  <div id="mc_competencias" class="content">
+    <h1>competências</h1>
+	<br></br>
+    <h2>Tecnologias</h2>
+    <p>Através da licenciatura em Engenharia Informática, obtive experiência e conhecimentos em diversas tecnologias.</p>
+    <p>De seguida apresento uma classificação aproximada dos meus conhecimentos e experiência (maioritariamente adquirida no desenvolvimento de trabalhos e projectos da licenciatura) para cada uma das tecnologias, dividido 3 áreas distintas da informática.</p>
+    <h3>programação</h3>
+    <p>Possuo grande interesse pelas linguagens totalmente orientadas a objectos com frameworks organizadas (Java, PHP) e na área de Jogos, sendo a minha preferência a programação em OpenGl.</p>
+    <p>Os meus maiores conhecimentos e experiência estão associados a projectos web, utilizando PHP e MySQL.</p>
+	
+    <table class="tabela_competencias">
+      <tr>
+        <th scope="col">Tecnologia</th>
+        <th scope="col">Conhecimentos</th>
+        <th scope="col">Experiência</th>
+      </tr>
+	<tr>
+        <td class="td_special" scope="row">Java</td>
+        <td><span class="con_muito_bons">Muito Bons</span></td>
+        <td><span class="exp_muita">Muita</span></td>
+      </tr>    
+      <tr>
+        <td class="td_special" scope="row">PHP</td>
+        <td><span class="con_muito_bons">Muito bons</span></td>
+        <td><span class="exp_muita">Muita</span></td>
+      </tr>
+      <tr>
+        <td class="td_special" scope="row">Prolog</td>
+        <td><span class="con_bons">Bons</span></td>
+        <td><span class="exp_media">Média</span></td>
+      </tr>
+	<tr>
+        <td class="td_special" scope="row">OpenGL</td>
+        <td><span class="con_bons">Bons</span></td>
+        <td><span class="exp_media">Média</span></td>
+      </tr>
+     <tr>
+        <td class="td_special" scope="row">C</td>
+        <td><span class="con_medios">Médio</span></td>
+        <td><span class="exp_pouca">Elementar</span></td>
+      </tr>
+      <tr>
+        <td class="td_special" scope="row">C++</td>
+        <td><span class="con_bons">Bons</span></td>
+        <td><span class="exp_media">Média</span></td>
+      </tr>
+      <tr>
+        <td class="td_special" scope="row">ASP.net</td>
+        <td><span class="con_nocoes">Noções</span></td>
+        <td><span class="exp_media">Média</span></td>
+      </tr>
+<!--JAVA / C++ / PHP / PROLOG / PHPUnit / ASP.net / JAVASCRIPT 
+/ openGL / CSS / JQuery / MySQL / MS SQL Server-->
+      
+
+    </table>
+    <h3>base de dados </h3>
+    <p>Grande interesse pelos sistemas de gestão de base de dados, sendo que quer o SQL Server quer o Oracle possibilitam boas experiências de trabalho.</p>
+    <table class="tabela_competencias">
+      <tr>
+        <th scope="col">Tecnologia</th>
+        <th scope="col">Conhecimentos</th>
+        <th scope="col">Experiência</th>
+      </tr>
+      <tr>
+        <td class="td_special" scope="row">MySQL</td>
+        <td><span class="con_bons">Bons</span></td>
+        <td><span class="exp_muita">Muita</span></td>
+      </tr>
+      <tr>
+        <td class="td_special" scope="row">Oracle/PL-SQL </td>
+        <td><span class="con_poucos">Noções</span></td>
+        <td><span class="exp_media">Média</span></td>
+      </tr>
+      <tr>
+        <td class="td_special" scope="row">SQL</td>
+        <td><span class="con_bons">Bons</span></td>
+        <td><span class="exp_muita">Muita</span></td>
+      </tr>
+
+    </table>
+    
+    <h3>Administração de redes e sistemas </h3>
+    <p>Na administração de redes, tenho mais experiência com routers Cisco.</p>
+    <table class="tabela_competencias">
+      <tr>
+        <th scope="col">Tecnologia</th>
+        <th scope="col">Conhecimentos</th>
+        <th scope="col">Experiência</th>
+      </tr>
+
+      <tr>
+        <td class="td_special" scope="row">Windows XP / 7 </td>
+        <td><span class="con_bons">Bons</span></td>
+        <td><span class="exp_muita">Muita</span></td>
+      </tr>
+      <tr>
+        <td class="td_special" scope="row">Redes Cisco </td>
+        <td><span class="con_medios">Médios</span></td>
+        <td><span class="exp_media">Média</span></td>
+      </tr>
+      <tr>
+        <td class="td_special" scope="row">Linux</td>
+        <td><span class="con_medios">Médios</span></td>
+        <td><span class="exp_pouca">Elementar</span></td>
+      </tr>
+    </table>
+    </div>
+  
+  <!------------------------------------------------------------------------->
+  
+  
+  <div id="mc_portefolio" class="content">
+ 
+    <h1>Portefólio</h1>
+	<br></br>
+	<h2 class="portefolio_ano" id="currentDate">
+		<script type="text/javascript">getCurrentDate();</script> 
+	</h2>
+	
+	
+	
+    <div class="portefolio_item_div">
+ 	
+      <h3>Site rjtech.pt</h3>
+	  
+      <div class="portefolio_item_left_div"> 
+  <%= link_to "#{image_tag("logo.png", alt: "jntech : Empresa", :width => 75, :height => 75, :border =>0)}".html_safe, welcome_home_path %>
+         <div class="portefolio_item_info_div">
+            <table width="250px">
+              <tr>
+                <th><span class="descr_title" title="Funções desempenhadas no projecto">Função:</span></th>
+                <td>Criador e webdeveloper</td>
+              </tr>
+              <tr>
+                <th>Apoio:</th>
+                <td>Rui Costa</td>
+              </tr>
+              <tr>
+                <th>Categorias:</th>
+                <td>PHP, Javascript, HTML, CSS</td>
+              </tr>
+            </table>
+          </div>
+      </div>
+	  
+      <div class="portefolio_item_text_div">
+        <p>Projecto planeado em parceria com o meu irmão Rui Costa, está a ser realizado para que mais tarde venha a ser um site de prestigio e que angarie novos potênciais clientes. .</p>
+        <p>O objectivo é o de facultar aos futuros clientes varios produtos que disponibilizamos.</p>
+        <p>Este novo projecto encontra-se numa fase inicial de desenvolvimento.</p>
+      </div>
+	  
+	  <div class="clear">&nbsp;</div>
+     <!--class="portefolio_item_div"-->
+ 
+    </div>
+	
+
+	<h2 class="portefolio_ano">ano de 2012/2013</h2>
+
+    <div class="portefolio_item_div">
+      <h3>Projeto Estágio</h3>
+	  
+      <div class="portefolio_item_left_div"> 
+  <%= link_to "#{image_tag("laborders.png", alt: "LabOrders", :width => 75, :height => 75, :border =>0)}".html_safe, "http://www.LabOrders.com" %>
+          <div class="portefolio_item_info_div">
+            <table width="250px">
+              <tr>
+                <th>Orientador:</th>
+                <td>Dr. José Marinho</td>
+              </tr>
+              <tr>
+                <th>Supervisor:</th>
+                <td>Dr. Tiago Carvalho</td>
+              </tr>
+		  <tr>
+                <th><span class="descr_title" title="Funções desempenhadas no projecto">Função:</span></th>
+                <td>Processamento Automático de Catálogos e Testes Automáticos</td>
+              </tr>
+              <tr>
+                <th>Apoio:</th>
+                <td>Eng. Filipe Marques</td>
+              </tr>
+              <tr>
+                <th>Categorias:</th>
+                <td>MVC, PHP, PHPUnit, Javascript, HTML, CSS, JQuery, DOM, Selenium, Framework Kohana</td>
+              </tr>
+            </table>
+          </div>
+      </div>
+	  
+      <div class="portefolio_item_text_div">
+        <p>Realizei este projecto no final de licenciatura.  </p>
+        <p>O Projeto/Estágio foi desenvolvido na empresa PetriDish Software, Lda., especializada na comercialização de material de laboratório por catálogo, disponibilizado através de uma plataforma online desenvolvida na organização da empresa, LabOrders. 
+          Identificam-se como tarefas nucleares que constituíram o presente estágio, o processamento, monitorização e atualização de catálogos e, subsidiariamente, a sua execução no menor tempo possível com recurso a software auxiliar adequado, e a criação de testes automáticos, vocacionados para o desenvolvimento de uma maior rapidez na deteção de problemas na LabOrders, reduzindo o tempo de correção de bugs e, subsequentemente, os custos associados ao seu desenvolvimento.</p>
+	  <p>O projecto foi terminado em Fevereiro de 2013, tendo realizado todas as tarefas pretendidas.</p>
+	</div>
+	  
+	  <div class="clear">&nbsp;</div>
+     <!--class="portefolio_item_div"-->
+    </div>
+
+    <!--id="mc_portefolio"-->
+    
+    <h2 class="portefolio_ano">ano de 2012</h2>
+		
+	
+    <div class="portefolio_item_div">
+ 	
+      <h3>Game ISEPTEC</h3>
+	  
+      <div class="portefolio_item_left_div"> 
+      <%= link_to "#{image_tag("down.png", alt: "ISEPTEC : jogoISEPTEC", :width => 75, :height => 75, :border =>0)}".html_safe, "http://www.youtube.com/" %>
+          <div class="portefolio_item_info_div">
+            <table width="250px">
+              <tr>
+                <th><span class="descr_title" title="Funções desempenhadas no projecto">Função:</span></th>
+                <td>Programador, Game designer, roteirista.</td>
+              </tr>
+              <tr>
+                <th>Apoio:</th>
+                <td>Pedro Morais, Rui Costa</td>
+              </tr>
+              <tr>
+                <th>Categorias:</th>
+                <td>C#, openGL, Glaux, SQL, Prolog</td>
+              </tr>
+            </table>
+          </div>
+      </div>
+	  
+      <div class="portefolio_item_text_div">
+        <p>Projecto realizado em parceria com o meu irmão Rui Costa e um colega de curso Pedro Morais, foi realizado no ambito da unidade curricular de Laboratório e Projeto 5 e consiste na construção de um jogo com a vertente tetris e labirinto.</p>
+        <p>O objectivo do jogo é entregar todas as peças colocadas no camião nas respectivas lojas.</p>
+        <p>Este projecto encontra-se realizado com sucesso.</p>
+      </div>
+	  
+	  <div class="clear">&nbsp;</div>
+     <!--class="portefolio_item_div"-->
+ 
+    </div>
+    
+    <!------------------------------------------------->
+    
+    
+  </div>
+  <!--id="main_content"-->
+</div>
+
+<div id="main_footer">
+Copyright 2013, Jo&atilde;o Costa
+<!--id="main_footer"-->
+</div>
+
+<!--id="main"-->
+</div>
+
+<script language="javascript" type="text/javascript">
+<!--
+	abrir_tab(aberto);
+//-->
+</script>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2684211-1";
+urchinTracker();
+</script>
+</body>
+</html>
+

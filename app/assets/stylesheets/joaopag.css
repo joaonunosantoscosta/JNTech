@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Cores:
+Logo:
+#FF8000 - Laranja claro
+#CC3300 - Laranja escuro
+Imagem:
+#EEDDCC - Terra
+H1, A:
+#003399
+*/
+
+/*  #####################################  */
+/*  ###########  Globais  ###############  */
+
+body
+{	
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	
+/* text */
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table { margin:0; border:0; padding:0; border-collapse: collapse; }
+tr { margin:0; border:0; padding:0; }
+td, th { vertical-align: top; }
+th { text-align: right; color:#CC3300; font-weight:normal; }
+h1 {
+	font-size: 3em;
+	color: #000000;
+	text-transform:lowercase;
+	text-indent:0;
+	margin: .6em 0 -.1em 0;
+}
+h2 { font-size: 1.15em; color:#666666; text-indent:0; margin: 1.3em 0 1em 0; }
+h3 { font-size: 1.05em; color:#333333; text-indent:0; margin: 1em 0 0.9em 0; }
+a:link, a:visited { color: #003399; text-decoration: none; }
+a:hover, a:active {	color: #003399; text-decoration: underline; }
+a img {	border-width:2px; border-color:#EEDDCC; }
+p { margin-bottom:0.6em; margin-top:0; }
+/*input, textarea { border-width:0; }
+
+hr { 
+	height: 1px;
+	margin-top: 5px;
+	margin-bottom: 4px;
+	border:0;
+	color: transparent;
+	background-color: #000000;
+}*/
+
+/** TITULOS ***/
+h1:before, h2:before, h3:before, #navmenu a:before { content: "."; } 
+h1, h2, h3, #navmenu { text-transform:lowercase; }
+
+/*  #####################################  */
+/*  ###########  Main  ##################  */
+
+#main_joao {
+	background-color:#FFFFFF;
+	margin:0 auto;
+	width: 1000px;
+}
+
+	/*  #####################################  */
+	/*  ###########  Main  Header  ##########  */
+
+#main_header {
+	background: url(portfolio/backgrounf.jpg) left top repeat ;
+	width: 100%;
+	min-height:85px;
+/*	padding:0 24px 24px 24px;*/
+	word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+/*	overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+	overflow:auto;
+	clear:both;
+	
+/* text */
+	font-size: 11px;
+}
+
+#m_header_logo {
+	float:left;
+	margin-top:7px;
+	margin-left:100px;
+}
+
+#m_header_area {
+	float:right;
+	margin-top:10px;
+	margin-right:100px;
+	vertical-align:middle;
+}
+
+	/*  #####################################  */
+	/*  ###########  Main  Image  ###########  */
+
+#main_image {
+	background-image:url(portfolio/btn-bg2.png);
+	background-position:top right;
+	background-repeat:no-repeat;
+	width: 100%;
+	height:170px;
+	clear:both;
+}
+
+#main_image_wrapsizer {
+	height: 146px;
+}
+
+		
+/** Necessário css inline margin-top:0; margin-bottom:0; para o Firefox não se passar **/
+#navmenu {
+}
+
+#navmenu li {
+  padding-right: 3px;
+  float: left;
+  list-style: none;
+}
+
+#navmenu a {
+  border: 1px solid #DDBB99;
+  border-width: 2px 1px 0px 1px;
+  padding: 0 8px;
+  display: block;
+  background: #EEDDBB;
+  color: #666;
+/* text */
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 2em;
+  min-height: 22px;
+}
+
+#navmenu a:hover {
+  text-decoration: underline;
+}
+
+#navmenu a:active {
+  background: #CCC;
+}
+
+		/*  #####################################  */
+		/*  ###########  Fim de Menu  ###########  */
+
+	/*  #####################################  */
+	/*  ###########  Main  Content  #########  */
+
+#main_content {
+	background-image:url(portfolio/btn-bg2.png);
+	background-position:top right;
+	background-repeat:no-repeat;
+	width: 100%;
+/*	height:170px;*/
+	min-height:140px;
+/*	padding:0 24px 24px 24px;*/
+	word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+/*	overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+	overflow:auto;
+	clear:both;
+/* text */
+	font-size: 14px;
+	line-height: 1.4em;
+	word-spacing: 0.16em;
+	text-indent: 1em;
+}
+
+#main_content td, #main_content th {
+	text-indent:0; line-height: 1.2em; text-indent: 0; padding: 3px;
+}
+
+#main_content td p, #main_content th p {
+	margin-bottom: 0.2em;
+}
+
+	/*  #####################################  */
+	/*  ###########  Main  Footer  ##########  */
+
+#main_footer {
+	background-image:url(portfolio/btn-bg2.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-color:#EEDDCC;
+	min-height:15px;
+	padding:5px;
+	
+/* text */
+	text-align:center;
+	word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+	overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+	clear:both;
+	font-size: 11px;
+}
+
+/*  #####################################  */
+/*  ###########  Classes  ###############  */
+
+.content {
+	min-height: 325px;
+	display: none;
+	padding-top: 10px;
+	padding-bottom: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.portefolio_ano {
+}
+
+.portefolio_item_div {
+	padding: 5px 15px 15px 15px;
+	border-width: 2px;
+	border-style: dotted;
+	border-color: #FFF;
+}
+
+.portefolio_item_div:hover {
+	background-color:#F4F4F4;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #DDD;
+	-moz-border-radius: 20px; /** Mozila apenas **/
+}
+
+.portefolio_item_left_div {
+	width:200px;
+	float:left;
+}
+
+.portefolio_item_left_div table {
+	width: 200px;
+}
+
+.portefolio_item_info_div {
+	padding-top:10px;
+/* text */
+	text-indent:0;
+	font-size:11px;
+  	line-height: normal;
+}
+
+.portefolio_item_text_div {
+	float: right;
+	width: 530px;
+}
+
+.e-mail {
+	color:#000000;
+	text-decoration:none;
+}
+
+.clear {
+	clear:both;
+}
+
+.tabela_competencias {
+	border-style:solid;
+	border-width:2px;
+	border-color:#EEDDCC;
+	width: 500px;
+	text-align:center;
+	margin:20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tabela_competencias th {
+	text-align:center;
+}
+
+.tabela_competencias td, .tabela_competencias  th {
+	border-style:solid;
+	border-width:2px;
+	border-color:#EEDDCC;
+	width:33%;
+	vertical-align: middle;
+}
+
+.tabela_competencias .td_special {
+	color:#666666;
+}
+
+.con_muito_bons, .exp_muita {
+	color:#339900;
+	font-weight:bold;
+}
+.con_bons, .exp_media {
+	color:#99CC00;
+	font-weight:bold;
+}
+.con_medios {
+	color:#CC9900;
+	font-weight:bold;
+}
+.con_poucos, .exp_pouca {
+	color:#666666;
+}
+.con_nocoes, .exp_minima {
+	color:#AAAAAA;
+}
+
+#tabela_perfil  {
+	border-style:solid;
+	border-width:2px;
+	border-color:#EEDDCC;
+	margin:20px;
+}
+
+#tabela_perfil td, #tabela_perfil  th {
+	border-style:solid;
+	border-width:2px;
+	border-color:#EEDDCC;
+}

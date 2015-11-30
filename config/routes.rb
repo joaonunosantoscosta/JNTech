@@ -1,6 +1,10 @@
 JntechApp::Application.routes.draw do
  
-
+  get "portfolio/home"
+  get 'joaonunosantoscosta_VIng' => 'portfolio#joaonunosantoscosta_VIng'
+  
+  get "portfolio/download_pdf"
+  
   get "casamento/home"
   get "welcome/home"
   get 'como_chegar' => 'casamento#como_chegar'
@@ -15,10 +19,8 @@ JntechApp::Application.routes.draw do
   resources :noticias 
   #resources :casamento
   # post 'casamento/home', :controller=>'casamento', :action => 'form'
-  
-  
-   # root to: "noticias#index"
 
+  # root to: "noticias#index"
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
