@@ -70,7 +70,7 @@ h1, h2, h3, #navmenu { text-transform:lowercase; }
 	/*  ###########  Main  Header  ##########  */
 
 #main_header {
-	background: url(images/portfolio/backgrounf.jpg) left top repeat ;
+	background-image: url(portfolio/backgrounf.jpg);
 	width: 100%;
 	min-height:85px;
 /*	padding:0 24px 24px 24px;*/
