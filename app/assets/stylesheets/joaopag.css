@@ -29,15 +29,15 @@ table { margin:0; border:0; padding:0; border-collapse: collapse; }
 tr { margin:0; border:0; padding:0; }
 td, th { vertical-align: top; }
 th { text-align: right; color:#CC3300; font-weight:normal; }
-h1 {
+h1.joaopag {
 	font-size: 3em;
 	color: #000000;
 	text-transform:lowercase;
 	text-indent:0;
 	margin: .6em 0 -.1em 0;
 }
-h2 { font-size: 1.15em; color:#666666; text-indent:0; margin: 1.3em 0 1em 0; }
-h3 { font-size: 1.05em; color:#333333; text-indent:0; margin: 1em 0 0.9em 0; }
+h2.joaopag { font-size: 1.15em; color:#666666; text-indent:0; margin: 1.3em 0 1em 0; }
+h3.joaopag { font-size: 1.05em; color:#333333; text-indent:0; margin: 1em 0 0.9em 0; }
 a:link, a:visited { color: #003399; text-decoration: none; }
 a:hover, a:active {	color: #003399; text-decoration: underline; }
 a img {	border-width:2px; border-color:#EEDDCC; }
@@ -54,8 +54,8 @@ hr {
 }*/
 
 /** TITULOS ***/
-h1:before, h2:before, h3:before, #navmenu a:before { content: "."; } 
-h1, h2, h3, #navmenu { text-transform:lowercase; }
+h1.joaopag:before, h2.joaopag:before, h3.joaopag:before, #navmenu a:before { content: "."; } 
+h1.joaopag, h2.joaopag, h3.joaopag, #navmenu { text-transform:lowercase; }
 
 /*  #####################################  */
 /*  ###########  Main  ##################  */
@@ -186,6 +186,7 @@ h1, h2, h3, #navmenu { text-transform:lowercase; }
 	background-position:center;
 	background-repeat:no-repeat;
 	background-color:#EEDDCC;
+	color: #ffffff;
 	min-height:15px;
 	padding:5px;
 	

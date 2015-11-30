@@ -64,7 +64,7 @@ for(var i=0; i<document.body.childNodes.length; i++)
 function getCurrentDate()
 { 
 	var d = new Date();
-	var year = d.getYear()
+	var year = d.getFullYear();
 	document.getElementById("currentDate").innerHTML = "ano de " + year;
 	return true;
 }
@@ -72,7 +72,7 @@ function getCurrentDate()
 function getCurrentDate2()
 { 
 	var d = new Date();
-	var year = d.getYear()
+	var year = d.getFullYear();
 	document.getElementById("currentDate2").innerHTML = "year " + year;
 	return true;
 }

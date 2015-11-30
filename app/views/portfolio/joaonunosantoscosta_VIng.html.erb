@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jo&atilde;o Costa :: Engenheiro Inform&aacute;tico</title>
+  <title>João Costa :: Engenheiro Informático</title>
   <!--
   <link rel="stylesheet" href="css/joaopag.css" type="text/css" media="screen" /> 
   <script type="text/javascript" src="js/joaonunosantoscosta.js" ></script>
   -->
   <%= stylesheet_link_tag "joaopag.css" , media: "screen"%>
-  <!--%= javascript_include_tag "joaonunosantoscosta" %>-->
+  <%= javascript_include_tag "joaonunosantoscosta.js" %>
 </head>
 <body>
 <div id="main_joao">
@@ -22,7 +22,7 @@
     <table>
     <tr>
     <th>Name:</th>
-    <td>Jo&atilde;o Nuno Santos Costa</td>
+    <td>João Nuno Santos Costa</td>
     </tr>
     <tr>
     <th>Formation:</th>
@@ -87,7 +87,7 @@
 
 
   <div id="mc_entrada" class="content">
-    <h1>entry</h1>
+    <h1 class= "joaopag">entry</h1>
 	<br></br>
 	<h2>Introduction</h2>
     <p>Welcome to my personal website.</p>
@@ -98,7 +98,7 @@
   
   
   <div id="mc_sobre_mim" class="content">
-    <h1>About me</h1>
+    <h1 class= "joaopag">About me</h1>
 	<br></br>
 	<h2>profile</h2>
 	
@@ -136,7 +136,7 @@
       </tr>
       <tr>
         <th scope="row">Curriculum Vitae: </th>
-        <td><a href="files/CV_João_dez2014.pdf" target="_blank">Dezembro'14 [PDF]</a></td>
+        <td><%= link_to "Dezembro'14 [PDF]", portfolio_download_pdf_url %></td>
 	</tr>	
 </table>
 	<br></br>
@@ -161,7 +161,7 @@
   <!----------------------------------------------------------------------->
   
   <div id="mc_competencias" class="content">
-    <h1>skills</h1>
+    <h1 class= "joaopag">skills</h1>
 	<br></br>
     <h2>technologies</h2>
     <p>Through degree in Computer Engineering, I gained experience and knowledge in various technologies.</p>
@@ -274,7 +274,7 @@
   
   <div id="mc_portefolio" class="content">
  
-    <h1>portfolio</h1>
+    <h1 class= "joaopag">portfolio</h1>
 	<br></br>
 	<h2 class="portefolio_ano" id="currentDate2">
 		<script type="text/javascript">getCurrentDate2();</script> 
@@ -283,7 +283,7 @@
 	
     <div class="portefolio_item_div">
  	
-      <h3>Site rjtech.pt</h3>
+      <h3>Company jntecht</h3>
 	  
       <div class="portefolio_item_left_div"> 
       <%= link_to "#{image_tag("logo.png", alt: "jntech : Empresa", :width => 75, :height => 75, :border =>0)}".html_safe, welcome_home_path %>
@@ -410,7 +410,7 @@
 </div>
 
 <div id="main_footer">
-Copyright 2013, Jo&atilde;o Costa
+Copyright 2013, João Costa
 <!--id="main_footer"-->
 </div>
 
