@@ -1,7 +1,7 @@
 /* Formulário Contacto */
 function validateContactForm()
 { 
-	alert("ENTROU!");
+
 	var name=document.forms["contactform"]["name"].value;
 	var email=document.forms["contactform"]["email"].value;
 	var message=document.forms["contactform"]["message"].value;

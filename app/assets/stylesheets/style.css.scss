@@ -208,6 +208,8 @@ mark {
 }
 .ie7 .clearfix { zoom: 1; } /* IE7 */
 
+
+
 /* ------------------------------------------------------
     STRUCTURE
 --------------------------------------------------------- */
@@ -220,11 +222,19 @@ mark {
     //top: 0;
     //left: 0;
 }
-header {
-    //position: relative;
-    //width: 940px;
-    //height: 70px;
-    //margin: 0 auto;
+header .btn{
+	margin: 5px 0;
+	background: #342bd9 url(btn-bg.png);
+        border: 1px solid #342bd9;
+        font-family: "MerriweatherBold", Georgia, Serif;
+        font-size: 10px;
+        color: #ffffff;
+        cursor: pointer;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+}
+
+header .btn-default:hover {
+    color: #ffffff;
 }
 .content-wrap {
     //width: 940px;
@@ -350,10 +360,26 @@ header {
         cursor: pointer;
         text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
 
-    box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
-    -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
-    -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
+    //box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
+    //-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
+    //-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
 }
+
+section#main .btn {
+	margin: 5px 0;
+	background: #342bd9 url(btn-bg.png);
+        border: 1px solid #342bd9;
+        font-family: "MerriweatherBold", Georgia, Serif;
+        font-size: 10px;
+        color: #ffffff;
+        cursor: pointer;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+
+    //box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
+    //-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
+    //-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
+}
+
 footer {
     //position: relative;
     //width: 940px;
@@ -688,9 +714,9 @@ section#contact .primary form textarea {
     border: 1px solid #342bd9;
    	font: 15px Helvetica, Arial, Sans-serif;
     //width: 250px;
-    box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
-        -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
-        -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
+    //box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
+      //  -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
+        //-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
 }
 section#contact .primary form textarea {
     height: 325px;
@@ -701,22 +727,23 @@ section#contact .primary form select:focus,
 section#contact .primary form textarea:focus {
 	background: #F0F0F0;
 }
-section#contact .primary form input.button {
-   	height: 38px;
+section#contact .primary form .btn {
 	margin: 5px 0;
 	background: #342bd9 url(btn-bg.png);
-    border: 1px solid #342bd9;
-    font-family: "MerriweatherBold", Georgia, Serif;
-    font-size: 10px;
-    color: #ffffff;
-    cursor: pointer;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+        border: 1px solid #342bd9;
+        font-family: "MerriweatherBold", Georgia, Serif;
+        font-size: 10px;
+        color: #ffffff;
+        cursor: pointer;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
 
-    box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
-    -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
-    -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
+    //box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
+    //-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
+    //-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #ffffff;
 }
-.ie7 section#contact .primary form input.button {
+
+
+.ie7 section#contact .primary form .btn {
     padding: 0 2px;
 }
 #name, #email, #message, #subject, #website {
